@@ -1,0 +1,36 @@
+group 'com.sikayetvar.textmining'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+ext.luceneVersion = "6.2.1"
+
+//create a single Jar with all dependencies
+task distLucene(type: Jar, dependsOn: test) {
+    manifest {
+        attributes 'Implementation-Title': 'Lucene demo',
+                'Implementation-Version': version,
+                'Main-Class': 'com.sikayetvar.textmining.lucene.ComplaintIndexer'
+    }
+    baseName = project.name + '-all'
+    archiveName = 'lucene.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile project(':zemberek-core')
+    compile project(':zemberek-morphology')
+    compile project(':api')
+    compile "org.apache.lucene:lucene-core:${luceneVersion}"
+    compile "org.apache.lucene:lucene-queryparser:${luceneVersion}"
+    compile "org.apache.lucene:lucene-analyzers-common:${luceneVersion}"
+    compile "org.apache.lucene:lucene-highlighter:${luceneVersion}"
+}

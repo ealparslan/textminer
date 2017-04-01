@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--<property name="connection.url">jdbc:mysql://curiosity.sikayetvar.com:3307/textmining?characterEncoding=UTF-8&amp;useSSL=false&amp;rewriteBatchedStatements=true</property>-->
+        <!--<property name="connection.url">jdbc:mysql://modelgenerator.westeurope.cloudapp.azure.com:3306/textmining?characterEncoding=UTF-8&amp;useSSL=false&amp;rewriteBatchedStatements=true</property>-->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.jdbc.fetch_size">1000</property>
+        <property name="hibernate.jdbc.batch_size">30</property>
+        <!--<property name="hibernate.show_sql">true</property>-->
+        <mapping class="com.sikayetvar.textmining.api.entity.Category"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.Complaint"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.Dictionary"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.Preference"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.Stopword"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.Hashtag"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.EndHashtag"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.ComplaintHashtag"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.ComplaintStems"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.FisHashtag"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.HashtagMax"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.EndHashtagMax"/>
+        <mapping class="com.sikayetvar.textmining.api.entity.NgramTerm"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

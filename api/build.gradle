@@ -1,0 +1,101 @@
+group 'com.sikayetvar.textmining'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+
+sourceCompatibility = 1.8
+
+//create a single Jar with all dependencies
+task distDemo(type: Jar, dependsOn: test) {
+    manifest {
+        attributes 'Implementation-Title': 'Api demo',
+                'Implementation-Version': version,
+                'Main-Class': 'com.sikayetvar.textmining.api.demo.Demo'
+    }
+    baseName = project.name + '-all'
+    archiveName = 'demo.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//create a single Jar with all dependencies
+task distHashtagBuilder(type: Jar, dependsOn: test) {
+    manifest {
+        attributes 'Implementation-Title': 'Api build model',
+                'Implementation-Version': version,
+                'Main-Class': 'com.sikayetvar.textmining.api.HashtagBuilder'
+    }
+    baseName = project.name + '-all'
+    archiveName = 'HashtagBuilder.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//create a single Jar with all dependencies
+task distNgramCandidateGenerator(type: Jar, dependsOn: test) {
+    manifest {
+        attributes 'Implementation-Title': 'NgramCandidateGenerator',
+                'Implementation-Version': version,
+                'Main-Class': 'com.sikayetvar.textmining.api.NgramCandidateGenerator'
+    }
+    baseName = project.name + '-all'
+    archiveName = 'NgramCandidateGenerator.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//create a single Jar with all dependencies
+task distComplaintHashtagger(type: Jar, dependsOn: test) {
+    manifest {
+        attributes 'Implementation-Title': 'Complaint Hashtagger',
+                'Implementation-Version': version,
+                'Main-Class': 'com.sikayetvar.textmining.api.ComplaintHashtagger'
+    }
+    baseName = project.name + '-all'
+    archiveName = 'ComplaintHashtagger.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//create a single Jar with all dependencies
+task distComplaintStemmer(type: Jar, dependsOn: test) {
+    manifest {
+        attributes 'Implementation-Title': 'Complaint Stemmer',
+                'Implementation-Version': version,
+                'Main-Class': 'com.sikayetvar.textmining.api.ComplaintStemmer'
+    }
+    baseName = project.name + '-all'
+    archiveName = 'ComplaintStemmer.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def withoutsl4j = {
+        exclude group: 'org.slf4j'
+    }
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile project(':zemberek-core')
+    compile project(':zemberek-morphology')
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.4.Final', withoutsl4j
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.24'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.24'
+
+    compile "org.apache.commons:commons-csv:1.3", withoutsl4j
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.16', withoutsl4j
+    compile group: 'com.ecyrd.speed4j', name: 'speed4j', version: '0.18', withoutsl4j
+    compile group: 'org.apache.commons', name: 'commons-configuration2', version: '2.1', withoutsl4j
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3', withoutsl4j
+    compile group: 'redis.clients', name: 'jedis', version: '2.9.0', withoutsl4j
+    compile group: 'com.datastax.cassandra', name: 'cassandra-driver-core', version: '3.1.2', withoutsl4j
+    compile group: 'org.elasticsearch.client', name: 'transport', version:'5.2.1', withoutsl4j
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version:'2.7'
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.7'
+
+}

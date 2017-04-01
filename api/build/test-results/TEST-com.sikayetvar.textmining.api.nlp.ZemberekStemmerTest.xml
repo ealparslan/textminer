@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sikayetvar.textmining.api.nlp.ZemberekStemmerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-03-22T22:34:45" hostname="Denizs-MacBook-Pro.local" time="0.025">
+  <properties/>
+  <testcase name="generateUndefinedCompoundNounPrefixes" classname="com.sikayetvar.textmining.api.nlp.ZemberekStemmerTest" time="0.002"/>
+  <testcase name="stem" classname="com.sikayetvar.textmining.api.nlp.ZemberekStemmerTest" time="0.001"/>
+  <testcase name="stemSentenceThenFilter" classname="com.sikayetvar.textmining.api.nlp.ZemberekStemmerTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

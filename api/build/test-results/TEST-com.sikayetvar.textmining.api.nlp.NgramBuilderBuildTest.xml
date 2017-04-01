@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sikayetvar.textmining.api.nlp.NgramBuilderBuildTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-22T22:34:45" hostname="Denizs-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="build[0]" classname="com.sikayetvar.textmining.api.nlp.NgramBuilderBuildTest" time="0.0"/>
+  <testcase name="build[1]" classname="com.sikayetvar.textmining.api.nlp.NgramBuilderBuildTest" time="0.0"/>
+  <testcase name="build[2]" classname="com.sikayetvar.textmining.api.nlp.NgramBuilderBuildTest" time="0.0"/>
+  <testcase name="build[3]" classname="com.sikayetvar.textmining.api.nlp.NgramBuilderBuildTest" time="0.0"/>
+  <testcase name="build[4]" classname="com.sikayetvar.textmining.api.nlp.NgramBuilderBuildTest" time="0.001"/>
+  <testcase name="build[5]" classname="com.sikayetvar.textmining.api.nlp.NgramBuilderBuildTest" time="0.0"/>
+  <system-out><![CDATA[ngram : 1
+ngram : 2
+ngram : 3
+ngram : 4
+ngram : 5
+ngram : 6
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

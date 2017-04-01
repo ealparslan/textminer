@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sikayetvar.textmining.api.HashtagBuilderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-22T22:34:40" hostname="Denizs-MacBook-Pro.local" time="4.386">
+  <properties/>
+  <testcase name="stemNgrams" classname="com.sikayetvar.textmining.api.HashtagBuilderTest" time="4.386"/>
+  <system-out><![CDATA[log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.hibernate] additivity to [false].
+log4j: Level value for org.hibernate is  [ERROR].
+log4j: org.hibernate level set to ERROR
+log4j: Level value for root is  [DEBUG].
+log4j: root level set to DEBUG
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [false].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [5].
+log4j: Setting property [threshold] to [ERROR].
+log4j: Setting property [file] to [logs/error-api.xml].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: logs/error-api.xml, false
+log4j: setFile ended
+log4j: Adding appender named [errorfile] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [false].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [5].
+log4j: Setting property [threshold] to [WARN].
+log4j: Setting property [file] to [logs/warning-api.xml].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Setting property [levelMin] to [WARN].
+log4j: Setting property [levelMax] to [WARN].
+log4j: Setting property [acceptOnMatch] to [true].
+log4j: Adding filter of type [class org.apache.log4j.varia.LevelRangeFilter] to appender named [warningfile].
+log4j: setFile called: logs/warning-api.xml, false
+log4j: setFile ended
+log4j: Adding appender named [warningfile] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [false].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [5].
+log4j: Setting property [threshold] to [DEBUG].
+log4j: Setting property [file] to [logs/debug-api.xml].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Setting property [levelMin] to [DEBUG].
+log4j: Setting property [levelMax] to [DEBUG].
+log4j: Setting property [acceptOnMatch] to [true].
+log4j: Adding filter of type [class org.apache.log4j.varia.LevelRangeFilter] to appender named [debugfile].
+log4j: setFile called: logs/debug-api.xml, false
+log4j: setFile ended
+log4j: Adding appender named [debugfile] to category [root].
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [threshold] to [INFO].
+log4j: Setting property [levelMin] to [INFO].
+log4j: Setting property [levelMax] to [INFO].
+log4j: Setting property [acceptOnMatch] to [true].
+log4j: Adding filter of type [class org.apache.log4j.varia.LevelRangeFilter] to appender named [console].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d [%t] %-5p %c - %m%n].
+log4j: Adding appender named [console] to category [root].
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN Continuable parsing error 62 and column 16
+log4j:WARN The content of element type "appender" must match "(errorHandler?,param*,rollingPolicy?,triggeringPolicy?,connectionSource?,layout?,filter*,appender-ref*)".
+log4j:WARN No such property [append] in org.apache.log4j.ConsoleAppender.
+I|15:34:44.133|Parser ready: 1128ms.                                                                               | TurkishWordParserGenerator$TurkishMorphParserBuilder#build
+]]></system-err>
+</testsuite>

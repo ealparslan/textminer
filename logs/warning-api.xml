@@ -1,0 +1,5 @@
+2017-03-22 15:41:25 WARN  Configuration:158 - Config file <api.properties> not found
+2017-03-22 15:41:25 WARN  Configuration:159 - Falling back to default hardcoded values.
+2017-03-22 15:41:26 WARN  MysqlDataOperator:378 - DEBUGGING ACTIVE
+2017-03-22 16:51:39 WARN  MysqlDataOperator:533 - Error while deleting previous model : hashtag_20170322.csv
+2017-03-22 16:51:39 WARN  MysqlDataOperator:545 - Error while deleting previous model : fis_hashtag_20170322.csv

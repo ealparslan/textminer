@@ -1,0 +1,10 @@
+rootProject.name = 'textmining'
+include 'api'
+include 'zemberek-core'
+include 'zemberek-tokenization'
+include 'zemberek-morphology'
+include 'zemberek-lm'
+include 'web'
+include 'lucene'
+include 'poc'
+

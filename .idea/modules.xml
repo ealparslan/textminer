@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lucene/lucene.iml" filepath="$PROJECT_DIR$/.idea/modules/lucene/lucene.iml" group="lucene" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lucene/lucene_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lucene/lucene_main.iml" group="lucene" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lucene/lucene_test.iml" filepath="$PROJECT_DIR$/.idea/modules/lucene/lucene_test.iml" group="lucene" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/poc/poc.iml" filepath="$PROJECT_DIR$/.idea/modules/poc/poc.iml" group="poc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/poc/poc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/poc/poc_main.iml" group="poc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/poc/poc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/poc/poc_test.iml" group="poc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/textmining.iml" filepath="$PROJECT_DIR$/.idea/modules/textmining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web.iml" group="web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web_main.iml" group="web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web_test.iml" group="web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-core/zemberek-core.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-core/zemberek-core.iml" group="zemberek-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-core/zemberek-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-core/zemberek-core_main.iml" group="zemberek-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-core/zemberek-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-core/zemberek-core_test.iml" group="zemberek-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-lm/zemberek-lm.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-lm/zemberek-lm.iml" group="zemberek-lm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-lm/zemberek-lm_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-lm/zemberek-lm_main.iml" group="zemberek-lm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-lm/zemberek-lm_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-lm/zemberek-lm_test.iml" group="zemberek-lm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-morphology/zemberek-morphology.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-morphology/zemberek-morphology.iml" group="zemberek-morphology" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-morphology/zemberek-morphology_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-morphology/zemberek-morphology_main.iml" group="zemberek-morphology" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-morphology/zemberek-morphology_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-morphology/zemberek-morphology_test.iml" group="zemberek-morphology" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-tokenization/zemberek-tokenization.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-tokenization/zemberek-tokenization.iml" group="zemberek-tokenization" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-tokenization/zemberek-tokenization_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-tokenization/zemberek-tokenization_main.iml" group="zemberek-tokenization" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zemberek-tokenization/zemberek-tokenization_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zemberek-tokenization/zemberek-tokenization_test.iml" group="zemberek-tokenization" />
+    </modules>
+  </component>
+</project>

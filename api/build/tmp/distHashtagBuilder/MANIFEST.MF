@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: Api build model
+Implementation-Version: 1.0-SNAPSHOT
+Main-Class: com.sikayetvar.textmining.api.HashtagBuilder
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="api_main" target="1.8" />
+      <module name="api_test" target="1.8" />
+      <module name="lucene_main" target="1.8" />
+      <module name="lucene_test" target="1.8" />
+      <module name="poc_main" target="1.8" />
+      <module name="poc_test" target="1.8" />
+      <module name="web" target="1.8" />
+      <module name="web_main" target="1.8" />
+      <module name="web_test" target="1.8" />
+      <module name="zemberek-core" target="1.8" />
+      <module name="zemberek-core_main" target="1.8" />
+      <module name="zemberek-core_test" target="1.8" />
+      <module name="zemberek-lm" target="1.8" />
+      <module name="zemberek-lm_main" target="1.8" />
+      <module name="zemberek-lm_test" target="1.8" />
+      <module name="zemberek-morphology" target="1.8" />
+      <module name="zemberek-morphology_main" target="1.8" />
+      <module name="zemberek-morphology_test" target="1.8" />
+      <module name="zemberek-tokenization" target="1.8" />
+      <module name="zemberek-tokenization_main" target="1.8" />
+      <module name="zemberek-tokenization_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

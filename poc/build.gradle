@@ -1,0 +1,45 @@
+group 'com.sikayetvar.textmining'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+ext.nd4jVersion = "0.4.0"
+ext.dl4jVersion = "0.4.0"
+
+repositories {
+    mavenCentral()
+}
+
+//create a single Jar with all dependencies
+task distWord2Vec(type: Jar, dependsOn: test) {
+    manifest {
+        attributes 'Implementation-Title': 'POC for textmining',
+                'Implementation-Version': version,
+                'Main-Class': 'com.sikayetvar.textmining.poc.Word2vec'
+    }
+    baseName = project.name + '-all'
+    archiveName = 'Word2Vec.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+dependencies {
+    compile(group: 'com.google.cloud', name: 'google-cloud-bigquery', version: '0.8.1-beta')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile project(':api')
+    compile(group: 'org.apache.poi', name: 'poi-ooxml', version: '3.15') {
+        exclude group: "org.slf4j"
+        exclude group: 'ch.qos.logback'
+    }
+    compile(group: 'com.medallia.word2vec', name: 'Word2VecJava', version: '0.10.3') {
+        exclude group: "org.slf4j"
+        exclude group: 'ch.qos.logback'
+    }
+    compile(group: 'info.bliki.wiki', name: 'bliki-core', version: '3.1.0') {
+        exclude group: "org.slf4j"
+        exclude group: 'ch.qos.logback'
+    }
+
+}
